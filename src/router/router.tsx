@@ -1,13 +1,14 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Generate from "../pages/generate";
+import Error from "../pages/404";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/data/:id_data" element={<Generate />} />
+        <Route path="/" element={<Error />} />
+        <Route path="/:id_data" element={<Generate />} />
       </Routes>
     </BrowserRouter>
   );
