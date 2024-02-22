@@ -107,7 +107,7 @@ const Generate = () => {
   }, [id_data]);
 
   const generateQRCode = (id: number) => {
-    const dummyDataURL = `https://test-data-v69.vercel.app/${id}`;
+    const dummyDataURL = `https://test-data-v69-pfpbkg6ps-fianda.vercel.app/data/${id}`;
     return dummyDataURL;
   };
 
